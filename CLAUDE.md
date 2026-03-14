@@ -52,3 +52,13 @@ Everything lives in `:root` at the top of `nexa.html`. Never hardcode colors els
 **Spacing scale (4px base):** xs=4 / sm=8 / md=16 / lg=24 / xl=48 / 2xl=80 / 3xl=120
 
 **Radius:** sm=4px / md=8px / lg=16px / full=9999px
+
+## Git workflow
+
+After every change, commit and push to GitHub:
+```bash
+git add nexa.html
+git commit -m "description of change"
+git push
+```
+Remote: `https://github.com/simopoulos/ClaudeProject1.git`

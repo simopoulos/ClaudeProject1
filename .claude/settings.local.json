@@ -5,7 +5,10 @@
       "WebFetch(domain:www.artofsmile.ca)",
       "Bash(start \"C:\\\\Users\\\\ethan\\\\OneDrive\\\\Documents\\\\Claude Stuff\\\\ClaudeCodingProject#1\\\\nexa.html\")",
       "Bash(start chrome:*)",
-      "Bash(gh auth:*)"
+      "Bash(gh auth:*)",
+      "Bash(mkdir -p ~/.claude/skills/mcp-builder)",
+      "Bash(cp \"/mnt/c/Users/ethan/Downloads/SKILL \\(1\\).md\" ~/.claude/skills/mcp-builder/SKILL.md)",
+      "Read(//c/Users/ethan/.claude/skills/**)"
     ]
   }
 }

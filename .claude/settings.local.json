@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(start \"C:\\\\Users\\\\ethan\\\\ClaudeCodingProject#1\\\\2048.html\")",
+      "WebFetch(domain:www.artofsmile.ca)",
+      "Bash(start \"C:\\\\Users\\\\ethan\\\\OneDrive\\\\Documents\\\\Claude Stuff\\\\ClaudeCodingProject#1\\\\nexa.html\")",
+      "Bash(start chrome:*)",
+      "Bash(gh auth:*)"
+    ]
+  }
+}

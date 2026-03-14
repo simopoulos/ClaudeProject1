@@ -1,385 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Art of Smile Dentistry — Yonge & Eglinton, Toronto</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Inter:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
 
   <!-- NAV -->
-  <nav>
+  <nav id="nav">
     <div class="nav-inner">
-      <div class="nav-logo">
-        <span class="word-art">Art</span>
-        <span class="word-of">&nbsp;Of&nbsp;</span>
-        <span class="word-smile">Smile</span>
-        <span class="word-star">✦</span>
-      </div>
-      <ul class="nav-links">
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Our Team</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">New Patients</a></li>
+      <a href="#hero" class="nav-logo">
+        <span class="word-art">Art</span><span class="word-of">&nbsp;Of&nbsp;</span><span class="word-smile">Smile</span><span class="word-star">✦</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#team">Our Team</a></li>
+        <li><a href="#why-us">Why Us</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
       <div class="nav-actions">
-        <a href="tel:4169329179" class="btn-ghost">(416) 932-9179</a>
-        <a href="#" class="btn-cta">Book Appointment</a>
+        <a href="tel:4169329179" class="nav-phone">(416) 932-9179</a>
+        <a href="#contact" class="btn-cta">Book Appointment</a>
       </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </nav>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-img"></div>
-    <div class="hero-overlay"></div>
-    <div class="hero-blob-1"></div>
-    <div class="hero-blob-2"></div>
+  <!-- MOBILE NAV -->
+  <div class="mobile-nav" id="mobileNav">
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#team">Our Team</a></li>
+      <li><a href="#why-us">Why Us</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="btn-cta mobile-cta">Book Appointment</a>
+    <a href="tel:4169329179" class="mobile-phone">(416) 932-9179</a>
+  </div>
 
-    <div class="hero-content container">
-      <div class="hero-pill">Yonge &amp; Eglinton · Toronto · Since 2001</div>
-      <h1 class="hero-h1">Your Smile,<br><span class="highlight">Perfected.</span></h1>
-      <p class="hero-sub">Stress-free, personalized dental care in the heart of Midtown Toronto. Preventive, cosmetic,
-        restorative — all under one roof.</p>
+  <!-- HERO -->
+  <section id="hero" class="hero">
+    <div class="hero-img" id="heroImg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-eyebrow">Yonge &amp; Eglinton · Toronto · Est. 2001</div>
+      <h1 class="hero-h1">Toronto's Home<br>For <em>Exceptional</em><br>Smiles</h1>
+      <p class="hero-sub">Stress-free, personalized dental care in the heart of Midtown Toronto. Preventive, cosmetic, and restorative — all under one roof.</p>
       <div class="hero-actions">
-        <a href="#" class="hero-cta">Book Your Appointment →</a>
-        <a href="tel:4169329179" class="hero-tel">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-            <path
-              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.13 1.01.36 2 .7 2.96a2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6.09 6.09l1.79-1.79a2 2 0 0 1 2.11-.45c.96.34 1.95.57 2.96.7a2 2 0 0 1 1.72 2.03z" />
-          </svg>
-          (416) 932-9179
-        </a>
+        <a href="#contact" class="hero-cta">Book Appointment</a>
+        <a href="#team" class="hero-ghost">Meet Our Team</a>
       </div>
       <div class="hero-stats">
-        <div class="hero-stat-chip">
-          <span class="num orange">25+</span>
-          <span class="lbl">Years serving Toronto</span>
+        <div class="hero-stat">
+          <span class="hero-stat-num">2001</span>
+          <span class="hero-stat-lbl">Established</span>
         </div>
-        <div class="hero-stat-chip">
-          <span class="num blue">3</span>
-          <span class="lbl">Expert dentists</span>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <span class="hero-stat-num">462+</span>
+          <span class="hero-stat-lbl">Reviews</span>
         </div>
-        <div class="hero-stat-chip">
-          <span class="num green">5★</span>
-          <span class="lbl">Patient-rated</span>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <span class="hero-stat-num">4.7★</span>
+          <span class="hero-stat-lbl">Google Rating</span>
         </div>
-        <div class="hero-stat-chip">
-          <span class="num" style="color:#e879f9;">7 PM</span>
-          <span class="lbl">Weekday availability</span>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <span class="hero-stat-num">3</span>
+          <span class="hero-stat-lbl">Expert Doctors</span>
         </div>
       </div>
     </div>
   </section>
 
   <!-- SERVICES -->
-  <section class="services-section">
+  <section id="services" class="services-section">
     <div class="container">
-      <div class="section-header">
-        <h2 class="section-h2">Care for<br>every <span class="accent">smile</span></h2>
-        <span class="section-badge badge-orange">Services</span>
+      <div class="section-tag">Services</div>
+      <div class="section-intro">
+        <h2 class="section-h2">Care for every <em>smile</em></h2>
+        <p class="section-desc">From routine cleanings to full smile transformations — comprehensive dental care under one roof.</p>
       </div>
-
       <div class="services-grid">
-        <!-- General -->
-        <div class="service-card card-blue">
+        <div class="service-card reveal" data-service="general" role="button" tabindex="0">
           <div class="service-icon icon-blue">
-            <svg viewBox="0 0 24 24" fill="none" stroke="#1baaf7" stroke-width="2" stroke-linecap="round">
-              <path d="M12 2C8 2 5 5 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-4-3-7-7-7z" />
-              <path d="M9 10l2 2 4-4" />
-            </svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4.5 12.75l6 6 9-13.5"/></svg>
           </div>
-          <div class="service-title">General Dentistry</div>
-          <div class="service-desc">Cleanings, exams, fillings, and comprehensive preventive care for the whole family.
-          </div>
+          <h3>General &amp; Preventive</h3>
+          <p>Cleanings, check-ups, digital X-rays, fillings, and root canals for the whole family.</p>
+          <span class="service-learn">Learn more →</span>
         </div>
-
-        <!-- Cosmetic -->
-        <div class="service-card card-orange">
+        <div class="service-card reveal" data-service="cosmetic" role="button" tabindex="0">
           <div class="service-icon icon-orange">
-            <svg viewBox="0 0 24 24" fill="none" stroke="#f7521b" stroke-width="2" stroke-linecap="round">
-              <circle cx="12" cy="12" r="10" />
-              <path d="M8 14s1.5 2 4 2 4-2 4-2" />
-              <line x1="9" y1="9" x2="9.01" y2="9" />
-              <line x1="15" y1="9" x2="15.01" y2="9" />
-            </svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
           </div>
-          <div class="service-title">Cosmetic Dentistry</div>
-          <div class="service-desc">Whitening, veneers, and full smile makeovers crafted for your unique features.</div>
+          <h3>Cosmetic Dentistry</h3>
+          <p>Veneers, teeth whitening, composite bonding, crowns, and bridges for a radiant smile.</p>
+          <span class="service-learn">Learn more →</span>
         </div>
-
-        <!-- Implants -->
-        <div class="service-card card-green">
+        <div class="service-card reveal" data-service="implants" role="button" tabindex="0">
           <div class="service-icon icon-green">
-            <svg viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round">
-              <rect x="9" y="2" width="6" height="12" rx="3" />
-              <path d="M7 14h10l1 8H6l1-8z" />
-            </svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M7 14h10l1 8H6l1-8z"/></svg>
           </div>
-          <div class="service-title">Dental Implants</div>
-          <div class="service-desc">Permanent, natural-looking tooth replacement by Dr. Kim — immediate placement
-            available.</div>
+          <h3>Dental Implants</h3>
+          <p>Single tooth implants, immediate placement, and implant-supported restorations by Dr. Kim.</p>
+          <span class="service-learn">Learn more →</span>
         </div>
-
-        <!-- Invisalign -->
-        <div class="service-card card-purple">
+        <div class="service-card reveal" data-service="invisalign" role="button" tabindex="0">
           <div class="service-icon icon-purple">
-            <svg viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="2" stroke-linecap="round">
-              <path d="M6 12 Q6 7 12 7 Q18 7 18 12 Q18 17 12 17 Q6 17 6 12Z" />
-              <path d="M9 12 Q9 9.5 12 9.5 Q15 9.5 15 12" />
-            </svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 12 Q6 7 12 7 Q18 7 18 12 Q18 17 12 17 Q6 17 6 12Z"/><path d="M9 12 Q9 9.5 12 9.5 Q15 9.5 15 12"/></svg>
           </div>
-          <div class="service-title">Invisalign &amp; Orthodontics</div>
-          <div class="service-desc">Discreet, comfortable clear aligner treatment to straighten your smile.</div>
+          <h3>Invisalign &amp; Clear Aligners</h3>
+          <p>Adult &amp; teen aligner treatment. Certified Invisalign + ClearCorrect providers on staff.</p>
+          <span class="service-learn">Learn more →</span>
         </div>
-
-        <!-- Oral Surgery -->
-        <div class="service-card card-orange">
-          <div class="service-icon icon-orange">
-            <svg viewBox="0 0 24 24" fill="none" stroke="#f7521b" stroke-width="2" stroke-linecap="round">
-              <path d="M12 2l7 4v8l-7 4-7-4V6l7-4z" />
-              <path d="M12 8v8M8 12h8" />
-            </svg>
+        <div class="service-card reveal" data-service="surgery" role="button" tabindex="0">
+          <div class="service-icon icon-gold">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l7 4v8l-7 4-7-4V6l7-4z"/><path d="M12 8v8M8 12h8"/></svg>
           </div>
-          <div class="service-title">Oral Surgery &amp; Wisdom Teeth</div>
-          <div class="service-desc">Comfortable wisdom tooth extractions under sedation, handled entirely in-house.
-          </div>
+          <h3>Oral Surgery</h3>
+          <p>Extractions, wisdom teeth removal with sedation available, and TMJ therapy.</p>
+          <span class="service-learn">Learn more →</span>
         </div>
-
-        <!-- Restorative -->
-        <div class="service-card card-blue">
-          <div class="service-icon icon-blue">
-            <svg viewBox="0 0 24 24" fill="none" stroke="#1baaf7" stroke-width="2" stroke-linecap="round">
-              <rect x="3" y="11" width="18" height="10" rx="2" />
-              <path d="M7 11V7a5 5 0 0 1 10 0v4" />
-            </svg>
+        <div class="service-card reveal" data-service="dentures" role="button" tabindex="0">
+          <div class="service-icon icon-forest">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
           </div>
-          <div class="service-title">Restorative Dentistry</div>
-          <div class="service-desc">Custom crowns, bridges, dentures, and implant-supported prosthetics.</div>
+          <h3>Denture Clinic</h3>
+          <p>Full and partial dentures, denture repairs, and implant-supported prosthetics.</p>
+          <span class="service-learn">Learn more →</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- WHY CHOOSE US -->
-  <section class="why-section">
+  <!-- WHY US -->
+  <section id="why-us" class="why-section">
     <div class="container">
-      <div class="section-header">
-        <h2 class="section-h2">Advanced <span class="blue">technology,</span><br>exceptional results</h2>
-        <span class="section-badge badge-blue">Why Us</span>
+      <div class="section-tag">Why Us</div>
+      <div class="section-intro reveal">
+        <h2 class="section-h2">25 years of <em>trusted</em> Toronto care</h2>
       </div>
-
       <div class="why-grid">
-        <!-- Left column: charts -->
-        <div>
-          <!-- Services breakdown bar chart -->
-          <div class="chart-card">
-            <div class="chart-card-title">Services offered in-house</div>
-            <div class="hbar-list">
-              <div class="hbar-row">
-                <div class="hbar-meta">
-                  <span class="hbar-label">General &amp; Preventive</span>
-                  <span class="hbar-val">100%</span>
-                </div>
-                <div class="hbar-track">
-                  <div class="hbar-fill" style="width:100%;background:#1baaf7;"></div>
-                </div>
-              </div>
-              <div class="hbar-row">
-                <div class="hbar-meta">
-                  <span class="hbar-label">Cosmetic Dentistry</span>
-                  <span class="hbar-val">100%</span>
-                </div>
-                <div class="hbar-track">
-                  <div class="hbar-fill" style="width:100%;background:#f7521b;"></div>
-                </div>
-              </div>
-              <div class="hbar-row">
-                <div class="hbar-meta">
-                  <span class="hbar-label">Dental Implants</span>
-                  <span class="hbar-val">100%</span>
-                </div>
-                <div class="hbar-track">
-                  <div class="hbar-fill" style="width:100%;background:#10b981;"></div>
-                </div>
-              </div>
-              <div class="hbar-row">
-                <div class="hbar-meta">
-                  <span class="hbar-label">Orthodontics / Invisalign</span>
-                  <span class="hbar-val">100%</span>
-                </div>
-                <div class="hbar-track">
-                  <div class="hbar-fill" style="width:100%;background:#8b5cf6;"></div>
-                </div>
-              </div>
-              <div class="hbar-row">
-                <div class="hbar-meta">
-                  <span class="hbar-label">Oral Surgery &amp; Sedation</span>
-                  <span class="hbar-val">100%</span>
-                </div>
-                <div class="hbar-track">
-                  <div class="hbar-fill" style="width:100%;background:#f59e0b;"></div>
-                </div>
-              </div>
-              <div class="hbar-row">
-                <div class="hbar-meta">
-                  <span class="hbar-label">Denturist Services</span>
-                  <span class="hbar-val">100%</span>
-                </div>
-                <div class="hbar-track">
-                  <div class="hbar-fill" style="width:100%;background:#ec4899;"></div>
-                </div>
-              </div>
-            </div>
+        <div class="why-stats">
+          <div class="why-stat reveal">
+            <div class="why-num-row"><span class="why-num" data-count="25">0</span><span class="why-num-suffix">+</span></div>
+            <span class="why-label">Years serving Midtown Toronto</span>
           </div>
-
-          <!-- Patient experience stats grid -->
-          <div class="chart-card" style="margin-top:var(--space-md);">
-            <div class="chart-card-title">Patient experience highlights</div>
-            <div class="gauge-grid">
-              <div class="gauge-item">
-                <div class="gauge-num" style="color:var(--color-accent-1);">5★</div>
-                <div class="gauge-lbl">Google &amp; Yelp<br>patient rating</div>
-              </div>
-              <div class="gauge-item">
-                <div class="gauge-num" style="color:var(--color-accent-2);">25+</div>
-                <div class="gauge-lbl">Years of trusted<br>community care</div>
-              </div>
-              <div class="gauge-item">
-                <div class="gauge-num" style="color:var(--color-accent-3);">7 PM</div>
-                <div class="gauge-lbl">Latest weekday<br>appointment</div>
-              </div>
-              <div class="gauge-item">
-                <div class="gauge-num" style="color:#8b5cf6;">3</div>
-                <div class="gauge-lbl">Expert dentists<br>on staff</div>
-              </div>
-            </div>
+          <div class="why-stat reveal">
+            <div class="why-num-row"><span class="why-num" data-count="462">0</span><span class="why-num-suffix">+</span></div>
+            <span class="why-label">Verified patient reviews</span>
+          </div>
+          <div class="why-stat reveal">
+            <div class="why-num-row"><span class="why-num" data-count-decimal="4.7">0</span><span class="why-num-suffix">★</span></div>
+            <span class="why-label">Google Rating</span>
+          </div>
+          <div class="why-stat reveal">
+            <div class="why-num-row"><span class="why-num">7 PM</span></div>
+            <span class="why-label">Latest weekday appointment</span>
           </div>
         </div>
-
-        <!-- Right column: about image + donut -->
-        <div>
-          <!-- About photo from their website -->
-          <div class="about-img-block">
-            <img src="https://artofsmile.ca/wp-content/uploads/2025/05/about.jpg" alt="Art of Smile Dentistry clinic"
-              onerror="this.style.display='none';this.parentElement.style.background='linear-gradient(135deg,#dbeafe,#ede9fe)'">
-            <div class="about-img-badge">
-              <div class="badge-num">Since 2001</div>
-              <div class="badge-lbl">Serving Midtown Toronto</div>
-            </div>
-          </div>
-
-          <!-- Technology donut chart -->
-          <div class="chart-card" style="margin-top:var(--space-md);">
-            <div class="chart-card-title">Technology stack</div>
-            <div class="donut-wrap">
-              <svg class="donut-svg" viewBox="0 0 100 100">
-                <!-- Background circle -->
-                <circle cx="50" cy="50" r="38" fill="none" stroke="#f1f5f9" stroke-width="14" />
-                <!-- Digital Scanners: 34% -->
-                <circle cx="50" cy="50" r="38" fill="none" stroke="#1baaf7" stroke-width="14"
-                  stroke-dasharray="83.8 155.2" stroke-dashoffset="0" stroke-linecap="butt" />
-                <!-- AI Diagnostics: 28% -->
-                <circle cx="50" cy="50" r="38" fill="none" stroke="#f7521b" stroke-width="14" stroke-dasharray="69 170"
-                  stroke-dashoffset="-83.8" stroke-linecap="butt" />
-                <!-- Panoramic X-Ray: 22% -->
-                <circle cx="50" cy="50" r="38" fill="none" stroke="#10b981" stroke-width="14"
-                  stroke-dasharray="54.2 184.8" stroke-dashoffset="-152.8" stroke-linecap="butt" />
-                <!-- Other: 16% -->
-                <circle cx="50" cy="50" r="38" fill="none" stroke="#8b5cf6" stroke-width="14"
-                  stroke-dasharray="39.4 199.6" stroke-dashoffset="-207" stroke-linecap="butt" />
-                <text x="50" y="46" text-anchor="middle" fill="#0f172a" font-size="10" font-weight="700"
-                  font-family="Inter,sans-serif">AI</text>
-                <text x="50" y="58" text-anchor="middle" fill="#94a3b8" font-size="7"
-                  font-family="Inter,sans-serif">Powered</text>
-              </svg>
-              <div class="donut-legend">
-                <div class="legend-row">
-                  <div class="legend-dot" style="background:#1baaf7;"></div>
-                  <span class="legend-label">Digital Scanners</span>
-                  <span class="legend-val">34%</span>
-                </div>
-                <div class="legend-row">
-                  <div class="legend-dot" style="background:#f7521b;"></div>
-                  <span class="legend-label">AI Diagnostics</span>
-                  <span class="legend-val">28%</span>
-                </div>
-                <div class="legend-row">
-                  <div class="legend-dot" style="background:#10b981;"></div>
-                  <span class="legend-label">Panoramic X-Ray</span>
-                  <span class="legend-val">22%</span>
-                </div>
-                <div class="legend-row">
-                  <div class="legend-dot" style="background:#8b5cf6;"></div>
-                  <span class="legend-label">Digital Imaging</span>
-                  <span class="legend-val">16%</span>
-                </div>
-              </div>
-            </div>
+        <div class="why-photo reveal">
+          <img src="https://artofsmile.ca/wp-content/uploads/2025/05/about.jpg" alt="Art of Smile Dentistry clinic" onerror="this.style.display='none'">
+          <div class="why-photo-badge">
+            <span class="why-badge-year">2001</span>
+            <span class="why-badge-text">Serving Midtown Toronto</span>
           </div>
         </div>
+      </div>
+      <div class="feature-tags reveal">
+        <span class="feature-tag">Digital X-rays</span>
+        <span class="feature-tag">Sedation Available</span>
+        <span class="feature-tag">Free Wi-Fi</span>
+        <span class="feature-tag">TV &amp; Headphones</span>
+        <span class="feature-tag">Luxe Hand Treatments</span>
+        <span class="feature-tag">Free Parking</span>
+        <span class="feature-tag">Insurance Accepted</span>
+        <span class="feature-tag">Extended Hours</span>
       </div>
     </div>
   </section>
 
-  <!-- OUR TEAM -->
-  <section class="team-section">
+  <!-- TEAM -->
+  <section id="team" class="team-section">
     <div class="container">
-      <div class="section-header">
-        <h2 class="section-h2">Meet our<br><span class="accent">dental team</span></h2>
-        <span class="section-badge badge-green">Team</span>
+      <div class="section-tag">Our Team</div>
+      <div class="section-intro reveal">
+        <h2 class="section-h2">Meet our <em>dental team</em></h2>
+        <p class="section-desc">Three dedicated doctors bringing decades of expertise and genuine care to every patient.</p>
       </div>
-
-      <div class="team-layout">
-        <div class="team-list">
-          <div class="team-member">
-            <span class="team-role">General Dentistry · Community</span>
-            <span class="team-name featured">DR. BATTAGLIN</span>
+      <div class="team-group-photo reveal">
+        <img src="https://artofsmile.ca/wp-content/smush-webp/2025/04/Group-1-1.png.webp" alt="Art of Smile Dental Team" onerror="this.style.display='none'">
+      </div>
+      <div class="team-cards">
+        <div class="team-card reveal" data-doctor="battaglin" role="button" tabindex="0">
+          <div class="team-card-photo placeholder-battaglin">
+            <div class="initials">HB</div>
           </div>
-          <div class="team-member">
-            <span class="team-role">Oral Surgery · Implant Dentistry</span>
-            <span class="team-name large">DR. PETER KIM</span>
-          </div>
-          <div class="team-member">
-            <span class="team-role">General &amp; Cosmetic Dentistry</span>
-            <span class="team-name medium">DR. JOVANNA WONG</span>
-          </div>
-          <div class="team-member">
-            <span class="team-role">Registered Dental Hygienists</span>
-            <span class="team-name small">HYGIENE TEAM</span>
-          </div>
-          <div class="team-member">
-            <span class="team-role">Orthodontics · Invisalign</span>
-            <span class="team-name small">ORTHO SPECIALISTS</span>
-          </div>
-          <div class="team-member">
-            <span class="team-role">Denturist Services</span>
-            <span class="team-name xsmall">DENTURE CLINIC</span>
-          </div>
-          <div class="team-member">
-            <span class="team-role">Patient Care Coordinators</span>
-            <span class="team-name xsmall">FRONT DESK TEAM</span>
+          <div class="team-card-info">
+            <span class="team-card-tag">General Dentistry</span>
+            <h3>Dr. Hermina Battaglin</h3>
+            <p class="team-card-cred">DDS — University of Toronto</p>
+            <p class="team-card-desc">Founder and lead dentist. Specializes in implant restorative dentistry and Invisalign.</p>
+            <span class="team-card-btn">View Full Bio</span>
           </div>
         </div>
-
-        <div class="team-photo">
-          <img src="https://artofsmile.ca/wp-content/smush-webp/2025/04/Group-1-1.png.webp"
-            alt="Art of Smile Dental Team"
-            onerror="this.style.display='none';this.parentElement.querySelector('.team-photo-placeholder').style.display='flex'">
-          <div class="team-photo-placeholder" style="display:none;">
-            <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="40" cy="28" r="16" fill="#bfdbfe" />
-              <path d="M10 72 C10 54 22 44 40 44 C58 44 70 54 70 72" fill="#bfdbfe" />
-            </svg>
+        <div class="team-card reveal" data-doctor="kim" role="button" tabindex="0">
+          <div class="team-card-photo placeholder-kim">
+            <div class="initials">PK</div>
+          </div>
+          <div class="team-card-info">
+            <span class="team-card-tag tag-orange">Oral Surgery &amp; Implants</span>
+            <h3>Dr. Peter Kim</h3>
+            <p class="team-card-cred">DDS — University of Western Ontario</p>
+            <p class="team-card-desc">Oral surgery specialist focused on immediate implant placement and complex extractions.</p>
+            <span class="team-card-btn">View Full Bio</span>
+          </div>
+        </div>
+        <div class="team-card reveal" data-doctor="wong" role="button" tabindex="0">
+          <div class="team-card-photo">
+            <img src="https://artofsmile.ca/wp-content/uploads/2025/11/Jovanna-Website-Image.webp" alt="Dr. Jovanna Wong" onerror="this.style.display='none';this.parentElement.classList.add('placeholder-wong')">
+          </div>
+          <div class="team-card-info">
+            <span class="team-card-tag tag-purple">General &amp; Cosmetic</span>
+            <h3>Dr. Jovanna Wong</h3>
+            <p class="team-card-cred">BDS — James Cook University, Australia</p>
+            <p class="team-card-desc">Certified Invisalign and ClearCorrect provider. Expert in cosmetic and restorative dentistry.</p>
+            <span class="team-card-btn">View Full Bio</span>
           </div>
         </div>
       </div>
@@ -387,119 +246,193 @@
   </section>
 
   <!-- TESTIMONIALS -->
-  <section class="testimonial-section">
+  <section id="reviews" class="testimonials-section">
+    <div class="testimonials-bg"></div>
     <div class="container">
-      <div class="section-header">
-        <h2 class="section-h2">What our<br><span class="accent">patients say</span></h2>
-        <span class="section-badge badge-orange">Testimonials</span>
+      <div class="section-tag tag-light">Reviews</div>
+      <div class="section-intro reveal">
+        <h2 class="section-h2 light">What our <em>patients say</em></h2>
       </div>
-
-      <div class="testimonial-lead">
-        <span class="quote-mark">"</span>
-        <p class="quote-text">I've been coming to Art of Smile for over ten years. Dr. Battaglin genuinely cares about
-          her patients — she treats you like a neighbour, not a number. Best dental experience in Toronto.</p>
-        <div class="quote-attr">
-          <span class="quote-stars">★★★★★</span>
-          <div>
-            <div class="quote-author">Sandra M. &nbsp;·&nbsp; <span
-                style="font-weight:400;color:var(--color-text-muted)">Patient since 2014</span></div>
-            <div class="quote-role">Yonge &amp; Eglinton · Google Review</div>
+      <div class="carousel" id="carousel">
+        <div class="carousel-track">
+          <div class="carousel-slide active">
+            <div class="carousel-stars">★★★★★</div>
+            <blockquote>"I've been coming to Art of Smile for over ten years. Dr. Battaglin genuinely cares about her patients — she treats you like a neighbour, not a number. Best dental experience in Toronto."</blockquote>
+            <cite>Sandra M. &nbsp;·&nbsp; Patient since 2014 &nbsp;·&nbsp; Google Review</cite>
+          </div>
+          <div class="carousel-slide">
+            <div class="carousel-stars">★★★★★</div>
+            <blockquote>"Dr. Kim did my implant — painless, fast, and the result looks completely natural. I didn't need to go anywhere else; they handled everything in-house."</blockquote>
+            <cite>Robert T. &nbsp;·&nbsp; Dental Implant Patient &nbsp;·&nbsp; Google Review</cite>
+          </div>
+          <div class="carousel-slide">
+            <div class="carousel-stars">★★★★★</div>
+            <blockquote>"I was terrified of the dentist before coming here. The team made me feel so at ease — they offered sedation for my wisdom teeth and I barely felt a thing."</blockquote>
+            <cite>Priya L. &nbsp;·&nbsp; Wisdom Teeth Patient &nbsp;·&nbsp; Google Review</cite>
+          </div>
+          <div class="carousel-slide">
+            <div class="carousel-stars">★★★★★</div>
+            <blockquote>"Invisalign through Art of Smile changed my confidence completely. Dr. Wong was incredible and the Saturday hours made it so easy to fit in around my schedule."</blockquote>
+            <cite>Aiden K. &nbsp;·&nbsp; Invisalign Patient &nbsp;·&nbsp; Google Review</cite>
+          </div>
+          <div class="carousel-slide">
+            <div class="carousel-stars">★★★★★</div>
+            <blockquote>"The clinic is immaculate, the staff are wonderful, and they actually run on time! Free parking is a huge bonus in midtown. Highly recommend to anyone in the neighbourhood."</blockquote>
+            <cite>Maria C. &nbsp;·&nbsp; Patient since 2019 &nbsp;·&nbsp; Google Review</cite>
           </div>
         </div>
-      </div>
-
-      <div class="testimonial-cards">
-        <div class="tcard">
-          <div class="tcard-stars">★★★★★</div>
-          <p class="tcard-quote">"Dr. Kim did my implant — painless, fast, and the result looks completely natural. I
-            didn't need to go anywhere else; they handled everything in-house."</p>
-          <div class="tcard-author">Robert T.</div>
-          <div class="tcard-role">Dental Implant Patient</div>
-          <span class="tcard-tag badge-green">Dental Implants</span>
-        </div>
-
-        <div class="tcard">
-          <div class="tcard-stars">★★★★★</div>
-          <p class="tcard-quote">"I was terrified of the dentist before coming here. The team made me feel so at ease —
-            they offered sedation for my wisdom teeth and I barely felt a thing."</p>
-          <div class="tcard-author">Priya L.</div>
-          <div class="tcard-role">Wisdom Teeth Patient</div>
-          <span class="tcard-tag badge-blue">Sedation Dentistry</span>
-        </div>
-
-        <div class="tcard">
-          <div class="tcard-stars">★★★★★</div>
-          <p class="tcard-quote">"Invisalign through Art of Smile changed my confidence completely. Dr. Wong was
-            incredible and the Saturday hours made it so easy to fit in around my schedule."</p>
-          <div class="tcard-author">Aiden K.</div>
-          <div class="tcard-role">Invisalign Patient</div>
-          <span class="tcard-tag badge-purple">Invisalign</span>
+        <div class="carousel-controls">
+          <button class="carousel-btn" id="carouselPrev" aria-label="Previous review">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+          </button>
+          <div class="carousel-dots" id="carouselDots"></div>
+          <button class="carousel-btn" id="carouselNext" aria-label="Next review">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+          </button>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- PHILOSOPHY & CONTACT -->
-  <section class="philosophy-section">
+  <!-- FAQ -->
+  <section id="faq" class="faq-section">
     <div class="container">
-      <div class="section-header">
-        <h2 class="section-h2">Our <span class="blue">philosophy</span></h2>
-        <span class="section-badge badge-purple">About Us</span>
+      <div class="section-tag">FAQ</div>
+      <div class="section-intro reveal">
+        <h2 class="section-h2">Common <em>questions</em></h2>
       </div>
-
-      <div class="philosophy-layout">
-        <div>
-          <p class="philosophy-text">Art of Smile was built on the belief that <em>exceptional dental care and a
-              comfortable experience go hand in hand.</em> Every visit should feel personal, calm, and
-            confidence-building.</p>
-          <p class="philosophy-sub">Since 2001, Dr. Battaglin and her team have been treating their Midtown Toronto
-            neighbours with the same care they'd give their own family — using the most advanced technology available,
-            in a warm, welcoming environment. We accept insurance, cash, and debit. Free Wi-Fi always on.</p>
-          <a href="#" class="philosophy-cta">Book your first visit →</a>
+      <div class="faq-list">
+        <div class="faq-item reveal">
+          <button class="faq-question">What are your hours?<span class="faq-icon">+</span></button>
+          <div class="faq-answer"><p>We're open Monday–Thursday 8am–7pm, Friday 8am–5pm, and Saturday 7am–5pm. We're closed on Sundays. Extended weekday hours until 7pm make it easy to book around your work schedule.</p></div>
         </div>
+        <div class="faq-item reveal">
+          <button class="faq-question">Do you accept dental insurance?<span class="faq-icon">+</span></button>
+          <div class="faq-answer"><p>Yes — we accept most major dental insurance plans and will direct-bill your insurance provider. We also accept cash and debit. Contact our front desk to confirm coverage before your appointment.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-question">How much does Invisalign cost?<span class="faq-icon">+</span></button>
+          <div class="faq-answer"><p>Invisalign treatment at Art of Smile typically ranges from $4,000–$7,000, depending on complexity. This includes all check-in appointments every 6–8 weeks throughout treatment. Flexible payment plans are available — ask us about financing options.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-question">Do you offer sedation dentistry?<span class="faq-icon">+</span></button>
+          <div class="faq-answer"><p>Yes. We offer sedation options for anxious patients and for procedures like wisdom tooth extractions and oral surgery. Our team will review your health history and recommend the appropriate level of sedation for your procedure.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-question">What should I expect on my first visit?<span class="faq-icon">+</span></button>
+          <div class="faq-answer"><p>Your first visit includes a comprehensive exam, digital X-rays, a professional cleaning, and a consultation with your dentist. We'll review your dental history, discuss any concerns, and create a personalized care plan. Plan for about 90 minutes.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-question">Is there parking available?<span class="faq-icon">+</span></button>
+          <div class="faq-answer"><p>Yes — free parking is available for patients. We're located at 2527 Yonge St, Main Floor, north of Eglinton. We're also steps from the Eglinton subway station and Crosstown LRT stop.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-question">Can I get an emergency appointment?<span class="faq-icon">+</span></button>
+          <div class="faq-answer"><p>We accommodate dental emergencies as quickly as possible. Call us at (416) 932-9179 and let the front desk know it's urgent. We do our best to fit emergency patients in the same day or next morning.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-question">How do I book an appointment?<span class="faq-icon">+</span></button>
+          <div class="faq-answer"><p>You can book by calling (416) 932-9179 Monday–Saturday during clinic hours, or by using the contact form below. New patients are always welcome — mention you're new and we'll make sure your first visit is smooth.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <div class="contact-cards">
-          <div class="contact-card orange-card">
-            <div class="contact-card-icon icon-bg-orange">
-              <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round">
-                <path
-                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.13 1.01.36 2 .7 2.96a2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6.09 6.09l1.79-1.79a2 2 0 0 1 2.11-.45c.96.34 1.95.57 2.96.7a2 2 0 0 1 1.72 2.03z" />
-              </svg>
+  <!-- CONTACT -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="section-tag">Contact</div>
+      <div class="section-intro reveal">
+        <h2 class="section-h2">Book your <em>appointment</em></h2>
+        <p class="section-desc">Fill out the form below and our team will get back to you within 24 hours to confirm your booking.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-form-wrap reveal">
+          <form id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">First Name <span class="required">*</span></label>
+                <input type="text" id="fname" name="fname" placeholder="Jane" required>
+                <span class="form-error" id="fnameError"></span>
+              </div>
+              <div class="form-group">
+                <label for="lname">Last Name <span class="required">*</span></label>
+                <input type="text" id="lname" name="lname" placeholder="Smith" required>
+                <span class="form-error" id="lnameError"></span>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email <span class="required">*</span></label>
+                <input type="email" id="email" name="email" placeholder="jane@example.com" required>
+                <span class="form-error" id="emailError"></span>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="(416) 555-0100">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="service">Service</label>
+              <select id="service" name="service">
+                <option value="">Select a service...</option>
+                <option value="general">General &amp; Preventive</option>
+                <option value="cosmetic">Cosmetic Dentistry</option>
+                <option value="implants">Dental Implants</option>
+                <option value="invisalign">Invisalign / Clear Aligners</option>
+                <option value="surgery">Oral Surgery</option>
+                <option value="dentures">Denture Clinic</option>
+                <option value="emergency">Emergency Appointment</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" placeholder="Tell us a bit about what you're looking for..."></textarea>
+            </div>
+            <button type="submit" class="form-submit">Send Message</button>
+          </form>
+          <div class="form-success" id="formSuccess">
+            <div class="success-icon">✓</div>
+            <h3>Message Received!</h3>
+            <p>Thank you! We'll be in touch within 24 hours to confirm your appointment.</p>
+            <p class="success-sub">For urgent matters, call us directly at <a href="tel:4169329179">(416) 932-9179</a>.</p>
+          </div>
+        </div>
+        <div class="contact-info reveal">
+          <div class="contact-info-card">
+            <div class="cic-icon orange-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.13 1.01.36 2 .7 2.96a2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6.09 6.09l1.79-1.79a2 2 0 0 1 2.11-.45c.96.34 1.95.57 2.96.7a2 2 0 0 1 1.72 2.03z"/></svg>
             </div>
             <div>
-              <div class="contact-card-label">Call Us</div>
-              <div class="contact-card-value">(416) 932-9179</div>
-              <div class="contact-card-sub">Mon–Sat · Appointment scheduling</div>
+              <span class="cic-label">Phone</span>
+              <a href="tel:4169329179" class="cic-value">(416) 932-9179</a>
+              <span class="cic-sub">Mon–Sat · New patients welcome</span>
             </div>
           </div>
-
-          <div class="contact-card blue-card">
-            <div class="contact-card-icon icon-bg-blue">
-              <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round">
-                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                <circle cx="12" cy="10" r="3" />
-              </svg>
+          <div class="contact-info-card">
+            <div class="cic-icon blue-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
             </div>
             <div>
-              <div class="contact-card-label">Find Us</div>
-              <div class="contact-card-value">2527 Yonge St, Main Floor</div>
-              <div class="contact-card-sub">North of Eglinton · Toronto, ON M4P 2H9</div>
+              <span class="cic-label">Address</span>
+              <span class="cic-value">2527 Yonge St, Main Floor</span>
+              <span class="cic-sub">Toronto, ON M4P 2H9 · North of Eglinton</span>
             </div>
           </div>
-
-          <div class="contact-card green-card">
-            <div class="contact-card-icon icon-bg-green">
-              <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round">
-                <rect x="3" y="4" width="18" height="18" rx="2" />
-                <line x1="16" y1="2" x2="16" y2="6" />
-                <line x1="8" y1="2" x2="8" y2="6" />
-                <line x1="3" y1="10" x2="21" y2="10" />
-              </svg>
+          <div class="contact-info-card">
+            <div class="cic-icon green-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
             </div>
             <div>
-              <div class="contact-card-label">Hours</div>
-              <div class="contact-card-value">Mon–Thu 8am–7pm</div>
-              <div class="contact-card-sub">Fri 8am–5pm · Sat 7am–5pm</div>
+              <span class="cic-label">Hours</span>
+              <span class="cic-value">Mon–Thu 8am–7pm</span>
+              <span class="cic-sub">Fri 8am–5pm · Sat 7am–5pm · Sun Closed</span>
+            </div>
+          </div>
+          <div class="map-placeholder">
+            <div class="map-inner">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="map-icon"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>2527 Yonge St<br>Toronto, ON M4P 2H9</span>
             </div>
           </div>
         </div>
@@ -508,82 +441,77 @@
   </section>
 
   <!-- FOOTER STATS -->
-  <footer class="footer-stats">
-    <div class="container" style="max-width:100%;padding:0;">
-      <div class="stats-grid">
-        <div class="stat-item">
-          <svg class="stat-icon" viewBox="0 0 32 32">
-            <circle cx="16" cy="16" r="10" fill="none" stroke="currentColor" stroke-width="2" />
-            <path d="M16 6 V16 L22 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round" />
-          </svg>
-          <div>
-            <div class="stat-num orange">2001</div>
-            <div class="stat-desc">proudly serving Toronto</div>
-          </div>
-        </div>
-        <div class="stat-item">
-          <svg class="stat-icon" viewBox="0 0 32 32">
-            <circle cx="16" cy="11" r="5" fill="none" stroke="currentColor" stroke-width="2" />
-            <path d="M6 28 C6 21 10 17 16 17 C22 17 26 21 26 28" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" />
-          </svg>
-          <div>
-            <div class="stat-num blue">3</div>
-            <div class="stat-desc">experienced dentists on staff</div>
-          </div>
-        </div>
-        <div class="stat-item">
-          <svg class="stat-icon" viewBox="0 0 32 32">
-            <rect x="4" y="6" width="24" height="20" rx="2" fill="none" stroke="currentColor" stroke-width="2" />
-            <line x1="4" y1="12" x2="28" y2="12" stroke="currentColor" stroke-width="2" />
-            <line x1="10" y1="3" x2="10" y2="9" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-            <line x1="22" y1="3" x2="22" y2="9" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-          </svg>
-          <div>
-            <div class="stat-num" style="color:#e879f9;">7 PM</div>
-            <div class="stat-desc">latest weekday appointment</div>
-          </div>
-        </div>
-        <div class="stat-item">
-          <svg class="stat-icon" viewBox="0 0 32 32">
-            <rect x="8" y="14" width="4" height="10" rx="1" fill="currentColor" />
-            <rect x="14" y="10" width="4" height="14" rx="1" fill="currentColor" />
-            <rect x="20" y="6" width="4" height="18" rx="1" fill="currentColor" />
-          </svg>
-          <div>
-            <div class="stat-num green">AI</div>
-            <div class="stat-desc">assisted digital diagnostics</div>
-          </div>
-        </div>
-        <div class="stat-item" style="border-right:none;">
-          <svg class="stat-icon" viewBox="0 0 32 32">
-            <path d="M16 4C10 4 6 9 6 14c0 7 10 14 10 14s10-7 10-14c0-5-4-10-10-10z" fill="none" stroke="currentColor"
-              stroke-width="2" />
-            <path d="M12 14l2.5 2.5L20 11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round" />
-          </svg>
-          <div>
-            <div class="stat-num orange">★★★★★</div>
-            <div class="stat-desc">patient-rated experience</div>
-          </div>
-        </div>
-      </div>
+  <div class="footer-stats">
+    <div class="footer-stats-grid">
+      <div class="fs-item"><span class="fs-num">2001</span><span class="fs-desc">Year Founded</span></div>
+      <div class="fs-divider"></div>
+      <div class="fs-item"><span class="fs-num">3</span><span class="fs-desc">Expert Dentists</span></div>
+      <div class="fs-divider"></div>
+      <div class="fs-item"><span class="fs-num">7 PM</span><span class="fs-desc">Latest Weekday Appt</span></div>
+      <div class="fs-divider"></div>
+      <div class="fs-item"><span class="fs-num">4.7★</span><span class="fs-desc">Google Rating</span></div>
+      <div class="fs-divider"></div>
+      <div class="fs-item"><span class="fs-num">462+</span><span class="fs-desc">Patient Reviews</span></div>
     </div>
-  </footer>
+  </div>
 
+  <!-- FOOTER NAV -->
   <footer class="footer-nav">
     <div class="footer-nav-inner">
-      <div class="footer-logo">
-        <span class="word-art">Art</span>
-        <span class="word-of">&nbsp;Of&nbsp;</span>
-        <span class="word-smile">Smile</span>
+      <div class="footer-left">
+        <div class="footer-logo">
+          <span class="word-art">Art</span><span class="word-of">&nbsp;Of&nbsp;</span><span class="word-smile">Smile</span><span class="word-star">✦</span>
+        </div>
+        <p class="footer-tagline">Exceptional dental care in the heart of Midtown Toronto since 2001.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram" class="social-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+          </a>
+          <a href="#" aria-label="Facebook" class="social-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+        </div>
       </div>
-      <div class="footer-copy">© 2026 Art of Smile Dentistry — 2527 Yonge St, Toronto, ON · (416) 932-9179</div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <span class="footer-col-title">Services</span>
+          <a href="#services">General Dentistry</a>
+          <a href="#services">Cosmetic Dentistry</a>
+          <a href="#services">Dental Implants</a>
+          <a href="#services">Invisalign</a>
+          <a href="#services">Oral Surgery</a>
+        </div>
+        <div class="footer-col">
+          <span class="footer-col-title">Clinic</span>
+          <a href="#team">Our Team</a>
+          <a href="#why-us">Why Choose Us</a>
+          <a href="#reviews">Patient Reviews</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Art of Smile Dentistry — 2527 Yonge St, Toronto, ON M4P 2H9 · (416) 932-9179</span>
     </div>
   </footer>
 
-</body>
+  <!-- SERVICE MODAL -->
+  <div class="modal-overlay" id="serviceModal" role="dialog" aria-modal="true">
+    <div class="modal-panel">
+      <button class="modal-close" id="serviceModalClose" aria-label="Close">&times;</button>
+      <div class="modal-body" id="serviceModalBody"></div>
+    </div>
+  </div>
 
-<script src="js/main.js"></script>
+  <!-- TEAM MODAL -->
+  <div class="modal-overlay" id="teamModal" role="dialog" aria-modal="true">
+    <div class="modal-panel">
+      <button class="modal-close" id="teamModalClose" aria-label="Close">&times;</button>
+      <div class="modal-body" id="teamModalBody"></div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
 </html>
